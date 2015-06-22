@@ -1,0 +1,19 @@
+{
+  "name": "game",
+  "version": "0.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "normalize.css": "~3.0.3",
+    "enchant.js": "~0.8.2",
+    "fontawesome": "~4.3.0",
+    "underscore": "~1.8.3"
+  }
+}

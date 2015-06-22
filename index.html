@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+  <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>PIZZA MAKER<p>What will you make?</p></h1>
+</div>
+  <canvas id="canvas" width="670" height="670" style="cursor:crosshair;
+  background-image:url(http://3.bp.blogspot.com/-ptpus-J6iVc/U57NoYQd0eI/AAAAAAAAAGc/9e83ygx66nw/s1600/Pizza.png);
+  background-size:700px,700px;background-repeat: no-repeat; border:1px dotted white;">
+  </canvas>
+  <div class="wrapToppings">
+  <div class='sauce'>
+    <h3>Choose your Sauce</h3>
+    <button type="button" class="btn btn-default tomatoSauce">Tomato Sauce</button>
+    <button type="button" class="btn btn-default alfredoSauce">Alfredo Sauce</button>
+    <button type="button" class="btn btn-default bbqSauce">BBQ Sauce</button>
+  </div>
+
+  <div class='cheese'>
+    <h3>Add Cheese</h3>
+    <button type="button" class="btn btn-default cheese">Cheese</button>
+  </div>
+
+  <div class='toppings'>
+    <h3>Add Toppings</h3>
+    <button type="button" class="btn btn-default onion">Onion</button>
+    <button type="button" class="btn btn-default jalapeno">Jalapeno</button>
+    <button type="button" class="btn btn-default pineapple">Pineapple</button>
+    <button type="button" class="btn btn-default yellowPeppers">Yellow Peppers</button>
+    <button type="button" class="btn btn-default greenPeppers">Green Peppers</button></br>
+    <button type="button" class="btn btn-default redPeppers">Red Peppers</button>
+    <button type="button" class="btn btn-default mushrooms">Mushrooms</button>
+    <button type="button" class="btn btn-default olives">Olives</button>
+    <button type="button" class="btn btn-default tomato">Tomato</button>
+  </div>
+  <div class='toppingsMeat'>
+    <h3>Add Meat</h3>
+    <button type="button" class="btn btn-default pepperoni">Pepperoni</button>
+    <button type="button" class="btn btn-default bacon">Bacon</button>
+    <button type="button" class="btn btn-default sausage">Sausage</button></br>
+    <button type="button" class="btn btn-default ham">Ham</button>
+    <button type="button" class="btn btn-default chicken">Chicken</button>
+    <button type="button" class="btn btn-default salami">Salami</button>
+  </div>
+  <div class = "clearCanvas">
+    <button type="button" class="btn btn-default clear">Start Over</button>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

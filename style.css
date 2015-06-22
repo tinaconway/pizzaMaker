@@ -1,0 +1,53 @@
+canvas {
+  border: 1px solid #000000;
+  width: 47%;
+  display: inline-block;
+}
+
+body {
+  text-align: center;
+  font-family: Lato;
+
+}
+
+.toppingsMeat {
+  margin-bottom: 50px;
+  color: #e31837;
+}
+
+.toppings {
+  color: #e31837;
+}
+
+.sauce {
+  color: #e31837;
+}
+
+.cheese {
+  color: #e31837;
+}
+
+h1 {
+  margin: 0;
+  font-size: 5em;
+  font-weight: 100;
+  padding-top: 20px;
+}
+.header {
+  background-color: #e31837;
+  color: white;
+  height: 150px;
+  margin-bottom: 20px;
+
+}
+
+p {
+  font-size: 25px;
+}
+
+.wrapToppings {
+  width: 47%;
+  display: inline-block;
+  float: left;
+  margin-top: 6%;
+}
