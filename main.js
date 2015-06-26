@@ -3,15 +3,16 @@ var canvas = document.getElementById("canvas")
 ctx = canvas.getContext('2d');
 
 var Toppings = function(name, link) {
-  this.name = name;
-  this.link = link;
+  this.name = name || 'name';
+  this.link = link || '';
   var self = this;
   this.clicked = function (){
     var selfInner = this;
     selfInner.img = new Image();
     this.img.src = self.link;
+    console.log(self.link);
     var innerImage = selfInner.img
-    console.log(innerImage)
+    console.log(innerImage);
     canvas.onclick = function(evt) {
     var x;
     var y;
@@ -26,9 +27,11 @@ var Toppings = function(name, link) {
     x -= canvas.offsetLeft;
     y -= canvas.offsetTop;
         ctx.drawImage(innerImage, x, y);
+  
     }
   }
 };
+
 
 var Sauce = function(name, link) {
   this.name = name;
@@ -51,13 +54,13 @@ ctx.drawImage(plate, 0, 0, 700, 700);
 }
 
 
-
+// SAUCE CONSTRUCTORS
 var tomatoSauce = new Sauce('tomato sauce', 'http://2.bp.blogspot.com/-Ebke1sTgVko/U6FEseMSDcI/AAAAAAAAAJ0/weqtyFmlpHU/s1600/Pizza+Sos+3.png');
 var alfredoSauce = new Sauce('alfredo sauce', 'http://2.bp.blogspot.com/-kyb63YutMa8/U6FEtB4KEtI/AAAAAAAAAKE/j4mOrlZNiKo/s1600/Pizza+Sos+5.png');
 var bbqSauce = new Sauce('bbq sauce', 'http://1.bp.blogspot.com/---M27YA3Jhk/U6E_2SsXahI/AAAAAAAAAJg/95I7R5K_XRQ/s1600/Pizza+Sos+1.png');
 
+// TOPPINGS CONSTRUCTORS
 var cheese = new Toppings ('cheese', 'Images/cheese.png');
-
 var onion = new Toppings('onion', 'Images/onion.png');
 var jalapeno = new Toppings('jalapeno', 'Images/jalapeno.png');
 var pineapple = new Toppings('pineapple', 'Images/pineapple.png');
